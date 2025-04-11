@@ -1,3 +1,4 @@
+import { NgFor } from '@angular/common';
 import { Component, input } from '@angular/core';
 
 export interface Navigation {
@@ -8,7 +9,7 @@ export interface Navigation {
 @Component({
   selector: 'app-navigation',
   standalone: true,
-  imports: [],
+  imports: [NgFor],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss',
 })
