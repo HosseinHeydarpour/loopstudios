@@ -3,3 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#hero {
+  background-image: url("../public/images/desktop/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and (max-width: 36rem) {
+    background-image: url("../public/images/mobile/image-hero-m.jpg");
+    background-position: center;
+  }
+}
