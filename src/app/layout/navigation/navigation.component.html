@@ -1,0 +1,13 @@
+<!-- Menu/Logo -->
+<nav class="flex items-center justify-between font-bold text-white">
+  <!-- Logo -->
+  <img src="images/logo.svg" alt="" />
+
+  <!-- Menu -->
+  <div class="hidden h-10 font-alata md:flex md:space-x-8">
+    <div class="group" *ngFor="let item of navigationItems">
+      <a href="#" class="">{{item.}}</a>
+      <div class="mx-2 group-hover:border-b group-hover:border-blue-50"></div>
+    </div>
+  </div>
+</nav>
