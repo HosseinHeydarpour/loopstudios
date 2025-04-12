@@ -1,22 +1,21 @@
 <!-- Item 1 -->
-<div class="group item">
-  <!-- Desktop Image -->
-  <img
-    [src]="desktopImg()"
-    [alt]="title()"
-    class="hidden w-full duration-200 md:block group-hover:scale-110"
-  />
 
-  <!-- Mobile Image -->
-  <img
-    [src]="mobileImg()"
-    [alt]="title()"
-    class="w-full duration-200 md:hidden group-hover:scale-110"
-  />
+<!-- Desktop Image -->
+<img
+  [src]="desktopImg()"
+  [alt]="title()"
+  class="hidden w-full duration-200 md:block group-hover:scale-110"
+/>
 
-  <!-- Items Gradient -->
-  <div class="item-gradient"></div>
+<!-- Mobile Image -->
+<img
+  [src]="mobileImg()"
+  [alt]="title()"
+  class="w-full duration-200 md:hidden group-hover:scale-110"
+/>
 
-  <!-- Item Text -->
-  <h5 class="">{{ title() }}</h5>
-</div>
+<!-- Items Gradient -->
+<div class="item-gradient"></div>
+
+<!-- Item Text -->
+<h5 class="">{{ title() }}</h5>
