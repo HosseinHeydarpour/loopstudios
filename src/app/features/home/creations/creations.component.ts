@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { ButtonPrimaryComponent } from '../../../shared/button-primary/button-primary.component';
+import { CardComponent } from '../../../shared/card/card.component';
+import { NgFor, SlicePipe } from '@angular/common';
 
 interface Projcet {
   title: string;
@@ -10,7 +12,7 @@ interface Projcet {
 @Component({
   selector: 'app-creations',
   standalone: true,
-  imports: [ButtonPrimaryComponent],
+  imports: [ButtonPrimaryComponent, CardComponent, NgFor, SlicePipe],
   templateUrl: './creations.component.html',
   styleUrl: './creations.component.scss',
 })
