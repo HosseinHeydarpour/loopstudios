@@ -13,4 +13,8 @@ import { CreationsComponent } from './features/home/creations/creations.componen
 })
 export class AppComponent {
   title = 'loopstudios-website';
+
+  navigationService = inject(NavigationService);
+
+  navigationItems = this.navigationService.menu;
 }
