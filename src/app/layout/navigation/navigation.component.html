@@ -11,7 +11,18 @@
     </div>
   </div>
 
-  <!-- TODO:  Hamburger Button -->
+  <div class="md:hidden">
+    <button
+      [class.open]="mobileMenuIsOpen()"
+      class="z-40 block hamburger md:hidden focus:outline-none"
+      type="button"
+      (click)="onMobileMenuBtnClicked()"
+    >
+      <span class="hamburger-top"></span>
+      <span class="hamburger-middle"></span>
+      <span class="hamburger-bottom"></span>
+    </button>
+  </div>
 </nav>
 
 <!-- TODO:  Mobile Menu -->

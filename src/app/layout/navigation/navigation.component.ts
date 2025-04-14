@@ -14,5 +14,10 @@ export interface Navigation {
   styleUrl: './navigation.component.scss',
 })
 export class NavigationComponent {
+  mobileMenuIsOpen = signal<boolean>(false);
   navigationItems = input.required<Navigation[]>();
+
+  onMobileMenuBtnClicked() {
+    this.mobileMenuIsOpen.update((wasClosed) => !wasClosed);
+  }
 }
