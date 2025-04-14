@@ -1,5 +1,5 @@
 import { NgFor } from '@angular/common';
-import { Component, input } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 
 export interface Navigation {
   label: string;
